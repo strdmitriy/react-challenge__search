@@ -26,7 +26,7 @@ var Contact = React.createClass({
         <img className="contact-image" src={this.props.image} width="60px" height="60px" />
         <div className="contact-info">
           <div className="contact-name"> {this.props.name} </div>
-          <div className="contact-number"> {this.props.phoneNumber} </div>
+          <div className="contact-number"> {this.props.number} </div>
         </div>
       </li>
     );
@@ -59,7 +59,7 @@ var ContactsList = React.createClass({
           return <Contact
           key={el.id}
           name={el.name}
-          phoneNumber={el.phoneNumber}
+          number={el.number}
           image={el.image}
           />;
         })
